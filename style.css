@@ -1,0 +1,120 @@
+@font-face {
+    font-family: LexendDeca;
+    src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Big;
+    src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: LexendThin;
+    src: url(fonts/static/LexendDeca-Thin.ttf);
+}
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F2F2;
+}
+h2{
+    font-family: Big;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+p{
+    font-family: LexendThin;
+    font-weight: 700;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+input{
+    font-family: LexendDeca;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: white;
+    min-height: 50px;
+    min-width: 140px;
+    border: 2px solid  white;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    max-width: 1440px;
+    height: 100vh;
+}
+.target{
+    display: flex;
+    min-height: 80%;
+    width: 100%;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 53px;
+}
+#orange{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+#orange input{
+    color: hsl(31, 77%, 52%);
+}
+
+#orange input:hover{
+    background-color: transparent;
+    color: white;
+}
+#green{
+    background-color: hsl(184, 100%, 22%);
+}
+#green input{
+    color:hsl(184, 100%, 22%) ;
+}
+#green input:hover{
+    background-color: transparent;
+    color: white;
+}
+#blue{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+#blue input{
+    color: hsl(179, 100%, 13%);
+}
+#blue input:hover{
+    background-color: transparent;
+    color: white;
+}
+
+@media screen and ( max-width: 375px){
+    
+    .container{
+        width: 90%;
+        height: auto;
+    }
+    .target{
+        flex-direction: column;
+    }
+    .card{
+        padding: 50px;
+    }
+    #orange{
+        border-radius: 10px 10px 0px 0px;
+    }
+    #blue{
+        border-radius: 0px 0px 10px 10px;
+    }
+}
